@@ -41,6 +41,7 @@ var ANCESTRY_FILE = "[\n  " + [
 ].join(",\n  ") + "\n]";
 
 var ancestry = JSON.parse(ANCESTRY_FILE);
+exports.ancestry = ancestry;
 
 // console.log(ancestry.filter(function(person) {
 //   return person.father == "Carel Haverbeke";
@@ -154,5 +155,5 @@ function longLivingPercentage(person) {
 
   return longLiving*100/all;
 }
-console.log(longLivingPercentage(byName["Emile Haverbeke"]));
+// console.log(longLivingPercentage(byName["Emile Haverbeke"]));
 
